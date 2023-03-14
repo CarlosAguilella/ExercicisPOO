@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-class E8{
+class E9 {
     String lletraEnPosicio(String text, int posicio){
         if (posicio>=text.length()){
-            return "";
+            return "error: text massa curt";
         }
         char lletra = text.charAt(posicio);
         return new String(Character.toString(lletra));
@@ -14,10 +14,10 @@ class E8{
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        E8 e8 = new E8();
+        E9 e9 = new E9();
         String text = scanner.next();
         int posicio = scanner.nextInt();
-        System.out.println(e8.lletraEnPosicio(text,posicio));
+        System.out.println(e9.lletraEnPosicio(text,posicio));
 
     }
 }
